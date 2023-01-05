@@ -22,7 +22,34 @@
         let metai = 2023;
         let gimimoMetai = 2000;
 
-        console.log("As esu" + (tarpas) + (vardas) + (tarpas) + (pavarde) + "." + (tarpas) + "Man yra" + (tarpas) + (metai - gimimoMetai) + (tarpas) + "metai.");
+        // console.log("As esu" + tarpas + vardas + tarpas + pavarde + "." + tarpas + "Man yra" + tarpas + (metai - gimimoMetai) + tarpas + "metai.");
+
+        // function rnd(min, max) { // min and max included 
+        //     return Math.floor(Math.random() * (max - min + 1) + min)
+        // }
+
+        // const rndInt = rnd(0, 4)
+        // console.log(rndInt)
+
+
+        let rnd1 = Math.round(Math.random() * 4)
+        console.log(rnd1);
+        let rnd2 = Math.round(Math.random() * 4)
+        console.log(rnd2);
+
+        if (rnd1 !== 0 && rnd2 !== 0) {
+            if (rnd1 == rnd2) {
+                console.log("equal");
+            } else {
+                if (rnd1 > rnd2) {
+                    console.log(Math.round(rnd1 / rnd2 * 100) / 100);
+                } else {
+                    console.log(Math.round(rnd2 / rnd1 * 100) / 100);
+                }
+            }
+        } else {
+            console.log("one is 0. Please reload");
+        }
 
 
 
