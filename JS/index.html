@@ -173,38 +173,52 @@
         // }
         // console.log(count0, count1, count2);
 
-        // ND6
+        // ND numeris 6
 
-        let n1 = -10 + Math.round(Math.random() * (10 - -10));
-        let n2 = -10 + Math.round(Math.random() * (10 - -10));
-        let n3 = -10 + Math.round(Math.random() * (10 - -10));
+        // let n1 = -10 + Math.round(Math.random() * (10 - -10));
+        // let n2 = -10 + Math.round(Math.random() * (10 - -10));
+        // let n3 = -10 + Math.round(Math.random() * (10 - -10));
 
-        console.log(n1);
-        console.log(n2);
-        console.log(n3);
+        // console.log(n1);
+        // console.log(n2);
+        // console.log(n3);
 
-        if (n1 < 0) {
-            console.log("[" + n1 + "]");
-        } else if (n1 == 0) {
-            console.log("(" + n1 + ")");
-        } else if (n1 > 0) {
-            console.log("{" + n1 + "}");
-        }
+        // if (n1 < 0) {
+        //     console.log("[" + n1 + "]");
+        // } else if (n1 == 0) {
+        //     console.log("(" + n1 + ")");
+        // } else if (n1 > 0) {
+        //     console.log("{" + n1 + "}");
+        // }
 
-        if (n2 < 0) {
-            console.log("[" + n2 + "]");
-        } else if (n2 == 0) {
-            console.log("(" + n2 + ")");
-        } else if (n2 > 0) {
-            console.log("{" + n2 + "}");
-        }
+        // if (n2 < 0) {
+        //     console.log("[" + n2 + "]");
+        // } else if (n2 == 0) {
+        //     console.log("(" + n2 + ")");
+        // } else if (n2 > 0) {
+        //     console.log("{" + n2 + "}");
+        // }
 
-        if (n3 < 0) {
-            console.log("[" + n3 + "]");
-        } else if (n3 == 0) {
-            console.log("(" + n3 + ")");
-        } else if (n3 > 0) {
-            console.log("{" + n3 + "}");
+        // if (n3 < 0) {
+        //     console.log("[" + n3 + "]");
+        // } else if (n3 == 0) {
+        //     console.log("(" + n3 + ")");
+        // } else if (n3 > 0) {
+        //     console.log("{" + n3 + "}");
+        // }
+
+
+        // ND numeris 7
+
+        let zvakiuKaina = 5 + Math.round(Math.random() * 2995);
+        console.log("Kiekis: " + zvakiuKaina + "vnt.");
+
+        if (zvakiuKaina >= 1000 && zvakiuKaina < 2000) {
+            console.log(Math.round(zvakiuKaina * 0.97 * 100 / 100) + "eur." + "Taikoma 3% nuolaida");
+        } else if (zvakiuKaina >= 2000) {
+            console.log(Math.round(zvakiuKaina * 0.96 * 100 / 100) + "eur." + "Taikoma 4% nuolaida");
+        } else if (zvakiuKaina < 1000) {
+            console.log(zvakiuKaina + "eur.");
         }
 
     </script>
