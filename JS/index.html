@@ -13,17 +13,21 @@
 
 <body>
     <script>
-        let vardas = "Arnas";
-        let pavarde = "Daugela";
-        console.log(vardas);
-        console.log(pavarde);
-        tarpas = " ";
 
-        let metai = 2023;
-        let gimimoMetai = 2000;
+        // ND numeris 1
+        // let vardas = "Arnas";
+        // let pavarde = "Daugela";
+        // console.log(vardas);
+        // console.log(pavarde);
+        // tarpas = " ";
+
+        // let metai = 2023;
+        // let gimimoMetai = 2000;
 
         // console.log("As esu" + tarpas + vardas + tarpas + pavarde + "." + tarpas + "Man yra" + tarpas + (metai - gimimoMetai) + tarpas + "metai.");
 
+
+        // PVZ
         // function rnd(min, max) { // min and max included 
         //     return Math.floor(Math.random() * (max - min + 1) + min)
         // }
@@ -31,29 +35,97 @@
         // const rndInt = rnd(0, 4)
         // console.log(rndInt)
 
+        // ND numeris 2
+        // let rnd1 = Math.round(Math.random() * 4)
+        // console.log(rnd1);
+        // let rnd2 = Math.round(Math.random() * 4)
+        // console.log(rnd2);
 
-        let rnd1 = Math.round(Math.random() * 4)
-        console.log(rnd1);
-        let rnd2 = Math.round(Math.random() * 4)
-        console.log(rnd2);
+        // if (rnd1 !== 0 && rnd2 !== 0) {
+        //     if (rnd1 == rnd2) {
+        //         console.log("equal");
+        //     } else {
+        //         if (rnd1 > rnd2) {
+        //             console.log(Math.round(rnd1 / rnd2 * 100) / 100);
+        //         } else {
+        //             console.log(Math.round(rnd2 / rnd1 * 100) / 100);
+        //         }
+        //     }
+        // } else {
+        //     console.log("one is 0. Please reload");
+        // }
 
-        if (rnd1 !== 0 && rnd2 !== 0) {
-            if (rnd1 == rnd2) {
-                console.log("equal");
+        // ND numeris 3
+        // let rnd1 = Math.round(Math.random() * 25)
+        // console.log(rnd1);
+        // let rnd2 = Math.round(Math.random() * 25)
+        // console.log(rnd2);
+        // let rnd3 = Math.round(Math.random() * 25)
+        // console.log(rnd3);
+
+        // let arr = [rnd1, rnd2, rnd3];
+        // arr.sort((a, b) => a - b);
+        // let median;
+        // if (arr.length % 2 != 0) {
+
+        //     let middleIndex = Math.floor(arr.length / 2)
+
+        //     median = arr[middleIndex]
+
+        // } else {
+        //     let middleIndex = Math.floor(arr.length / 2)
+
+        //     median = arr[middleIndex] + arr[middleIndex + 1]
+        // }
+        // console.log("vidurinė reikšmė: " + median)
+
+        // ND 3 teisingai:
+
+        // let rnd1 = Math.round(Math.random() * 25)
+        // console.log(rnd1);
+        // let rnd2 = Math.round(Math.random() * 25)
+        // console.log(rnd2);
+        // let rnd3 = Math.round(Math.random() * 25)
+        // console.log(rnd3);
+
+        // if ((rnd1 > rnd2 && rnd1 < rnd3) || (rnd1 < rnd2 && rnd1 > rnd3)) {
+        //     console.log(rnd1);
+        // }
+
+        // if ((rnd2 > rnd1 && rnd2 < rnd3) || (rnd2 < rnd1 && rnd2 > rnd3)) {
+        //     console.log(rnd2);
+        // }
+
+        // if ((rnd3 > rnd1 && rnd3 < rnd2) || (rnd3 < rnd1 && rnd3 > rnd2)) {
+        //     console.log(rnd3);
+        // }
+
+        // ND numeris 4
+        let a = Math.round(Math.random() * 10)
+        console.log(a);
+        let b = Math.round(Math.random() * 10)
+        console.log(b);
+        let c = Math.round(Math.random() * 10)
+        console.log(c);
+
+        if (a != 0 && b != 0 && c != 0) {
+
+            if (a + b > c) {
+                console.log("Trikampis galimas ir jo kraštinės yra: " + a + "+" + b + ">" + c);
             } else {
-                if (rnd1 > rnd2) {
-                    console.log(Math.round(rnd1 / rnd2 * 100) / 100);
+                if (a + c > b) {
+                    console.log("Trikampis galimas ir jo kraštinės yra: " + a + "+" + c + ">" + b);
                 } else {
-                    console.log(Math.round(rnd2 / rnd1 * 100) / 100);
+                    if (b + c > a) {
+                        console.log("Trikampis galimas ir jo kraštinės yra: " + b + "+" + c + ">" + a);
+                    } else {
+                        console.log("Trikampis negalimas");
+                    }
                 }
             }
         } else {
-            console.log("one is 0. Please reload");
+            console.log("viena ar kelios iš kraštinių lygios 0");
         }
-
-
-
-
     </script>
 </body>
 
