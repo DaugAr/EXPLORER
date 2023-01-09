@@ -101,31 +101,21 @@
         // }
 
         // ND numeris 4
-        let a = Math.round(Math.random() * 10)
+        let a = 1 + Math.round(Math.random() * 9)
         console.log(a);
-        let b = Math.round(Math.random() * 10)
+        let b = 1 + Math.round(Math.random() * 9)
         console.log(b);
-        let c = Math.round(Math.random() * 10)
+        let c = 1 + Math.round(Math.random() * 9)
         console.log(c);
 
-        if (a != 0 && b != 0 && c != 0) {
-
-            if (a + b > c) {
-                console.log("Trikampis galimas ir jo kraštinės yra: " + a + "+" + b + ">" + c);
-            } else {
-                if (a + c > b) {
-                    console.log("Trikampis galimas ir jo kraštinės yra: " + a + "+" + c + ">" + b);
-                } else {
-                    if (b + c > a) {
-                        console.log("Trikampis galimas ir jo kraštinės yra: " + b + "+" + c + ">" + a);
-                    } else {
-                        console.log("Trikampis negalimas");
-                    }
-                }
-            }
+        if (a + b > c && a + c > b && b + c > a) {
+            console.log("Trikampis galimas");
         } else {
-            console.log("viena ar kelios iš kraštinių lygios 0");
+            console.log("Trikampis negalimas");
         }
+
+        // ND numeris 5
+
     </script>
 </body>
 
