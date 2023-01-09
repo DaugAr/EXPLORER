@@ -55,7 +55,9 @@
         //     console.log("one is 0. Please reload");
         // }
 
+
         // ND numeris 3
+
         // let rnd1 = Math.round(Math.random() * 25)
         // console.log(rnd1);
         // let rnd2 = Math.round(Math.random() * 25)
@@ -210,15 +212,32 @@
 
         // ND numeris 7
 
-        let zvakiuKaina = 5 + Math.round(Math.random() * 2995);
-        console.log("Kiekis: " + zvakiuKaina + "vnt.");
+        // let zvakiuKaina = 5 + Math.round(Math.random() * 2995);
+        // console.log("Kiekis: " + zvakiuKaina + "vnt.");
 
-        if (zvakiuKaina >= 1000 && zvakiuKaina < 2000) {
-            console.log(Math.round(zvakiuKaina * 0.97 * 100 / 100) + "eur." + "Taikoma 3% nuolaida");
-        } else if (zvakiuKaina >= 2000) {
-            console.log(Math.round(zvakiuKaina * 0.96 * 100 / 100) + "eur." + "Taikoma 4% nuolaida");
-        } else if (zvakiuKaina < 1000) {
-            console.log(zvakiuKaina + "eur.");
+        // if (zvakiuKaina >= 1000 && zvakiuKaina < 2000) {
+        //     console.log(Math.round(zvakiuKaina * 0.97 * 100 / 100) + "eur." + "Taikoma 3% nuolaida");
+        // } else if (zvakiuKaina >= 2000) {
+        //     console.log(Math.round(zvakiuKaina * 0.96 * 100 / 100) + "eur." + "Taikoma 4% nuolaida");
+        // } else if (zvakiuKaina < 1000) {
+        //     console.log(zvakiuKaina + "eur.");
+        // }
+
+
+        // ND numeris 8
+
+        let n1 = Math.round(Math.random() * 100);
+        let n2 = Math.round(Math.random() * 100);
+        let n3 = Math.round(Math.random() * 100);
+        let vidurkis = (n1 + n2 + n3) / 3;
+
+        console.log(n1, n2, n3);
+        console.log(Math.round((n1 + n2 + n3) / 3 * 100));
+
+        if (vidurkis >= 10 && vidurkis <= 90) {
+            console.log(Math.round(vidurkis * 100));
+        } else {
+            console.log("vidurkio nėra");
         }
 
     </script>
