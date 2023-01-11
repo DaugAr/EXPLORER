@@ -277,7 +277,7 @@
 
 // 4. console.log(actorName.replace("a","u"));
 // 4. console.log(actorName.replace("a","u"));
-// google redeksus ar kazkaip panasiai 
+// google redeksus ar kazkaip panasiai
 // pregReplace(/\s);
 
 // 5. console.log(actorName.());
@@ -300,9 +300,18 @@
 
 // String ND - 2
 
-let firstName = "Denzel";
-let lastName = "Washington";
+// let firstName = "Denzel";
+// let lastName = "Washington";
 
-console.log(firstName.toUpperCase() + " " + lastName.toLowerCase());
+// console.log(firstName.toUpperCase() + " " + lastName.toLowerCase());
 
 // String ND - 3
+
+let firstName = "Denzel";
+let lastName = "Washington";
+let thirdName = firstName.charAt(0) + lastName.charAt(0);
+
+console.log(thirdName);
+
+// String ND - 4
+
