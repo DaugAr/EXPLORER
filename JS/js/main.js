@@ -286,17 +286,23 @@
 
 // String ND - 1
 
-let firstName = "Denzel";
-let lastName = "Washington";
+// let firstName = "Denzel";
+// let lastName = "Washington";
 
-console.log(firstName.length);
-console.log(lastName.length);
+// console.log(firstName.length);
+// console.log(lastName.length);
 
-if (firstName < lastName) {
-    console.log(firstName);
-} else {
-    console.log(lastName);
-}
+// if (firstName < lastName) {
+//     console.log(firstName);
+// } else {
+//     console.log(lastName);
+// }
 
 // String ND - 2
 
+let firstName = "Denzel";
+let lastName = "Washington";
+
+console.log(firstName.toUpperCase() + " " + lastName.toLowerCase());
+
+// String ND - 3
