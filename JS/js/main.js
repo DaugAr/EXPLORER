@@ -325,10 +325,22 @@
 
 // String ND - 5
 
-let american = "An American in Paris"
-let aBig = american.replaceAll("a", "A");
+// let american = "An American in Paris"
+// let aBig = american.replaceAll("a", "A");
 
-console.log(american);
-console.log(aBig.replaceAll("A", "*"));
+// console.log(american);
+// console.log(aBig.replaceAll("A", "*"));
 
 // String ND - 6
+
+let american = "An American in Paris"
+let tiff = "Breakfast at Tiffany's"
+let space = "2001: A Space Odyssey"
+let life = "It's a Wonderful Life"
+
+console.log(american.replace(/[aeiou]/ig, ''));
+console.log(tiff.replace(/[aeiouy]/ig, ''));
+console.log(space.replace(/[aeiouy]/ig, ''));
+console.log(life.replace(/[aeiou]/ig, ''));
+
+// String ND - 7
