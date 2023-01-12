@@ -227,32 +227,32 @@
 
 // ND numeris 9
 
-let hours = Math.round(Math.random() * 24);
-let minutes = Math.round(Math.random() * 60);
-let seconds = Math.round(Math.random() * 60);
-let extraSeconds = Math.round(Math.random() * 300);
+// let hours = Math.round(Math.random() * 24);
+// let minutes = Math.round(Math.random() * 60);
+// let seconds = Math.round(Math.random() * 60);
+// let extraSeconds = Math.round(Math.random() * 300);
 
-// hours = 23;
-// minutes = 59;
-// seconds = 0;
-// extraSeconds = 300;
-let secSum = seconds + extraSeconds;
-let allSec = seconds + minutes * 60 + hours * 3600 + extraSeconds;
-let nowTimeH = Math.floor(allSec / 3600);
-let nowTimeMin = Math.floor((allSec - nowTimeH * 3600) / 60);
-let nowTimeSec = Math.floor(allSec - (nowTimeH * 3600) - (nowTimeMin * 60));
+// // hours = 23;
+// // minutes = 59;
+// // seconds = 0;
+// // extraSeconds = 300;
+// let secSum = seconds + extraSeconds;
+// let allSec = seconds + minutes * 60 + hours * 3600 + extraSeconds;
+// let nowTimeH = Math.floor(allSec / 3600);
+// let nowTimeMin = Math.floor((allSec - nowTimeH * 3600) / 60);
+// let nowTimeSec = Math.floor(allSec - (nowTimeH * 3600) - (nowTimeMin * 60));
 
-console.log(hours + "h", minutes + "min.", seconds + "sec.");
-console.log(extraSeconds + " extra sec.");
-// console.log("sec. suma: " + secSum);
-// console.log(allSec + " all-sec.");
-// console.log(nowTimeH);
-// console.log(nowTimeH, nowTimeMin);
-if (nowTimeH < 24) {
-    console.log(nowTimeH + "h ", nowTimeMin + " min. ", nowTimeSec + "sec.");
-} else {
-    console.log(nowTimeH - 24 + "h ", nowTimeMin + " min. ", nowTimeSec + "sec.");
-}
+// console.log(hours + "h", minutes + "min.", seconds + "sec.");
+// console.log(extraSeconds + " extra sec.");
+// // console.log("sec. suma: " + secSum);
+// // console.log(allSec + " all-sec.");
+// // console.log(nowTimeH);
+// // console.log(nowTimeH, nowTimeMin);
+// if (nowTimeH < 24) {
+//     console.log(nowTimeH + "h ", nowTimeMin + " min. ", nowTimeSec + "sec.");
+// } else {
+//     console.log(nowTimeH - 24 + "h ", nowTimeMin + " min. ", nowTimeSec + "sec.");
+// }
 
 
 // neaktualu
@@ -363,3 +363,43 @@ if (nowTimeH < 24) {
 // console.log(nam);
 // // console.log(num);
 // console.log(thenum);
+
+// kitas variantas
+// console.log(nam chartAt(nam.length -14));
+
+// kitas variantas
+// console.log(nam.replaceAll(/[a-z:-]/gi, ""));
+
+// String ND - 8
+
+// let nd8 = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood"
+
+// console.log(nd8);
+
+
+// CIKLAI
+
+
+// for (let i = 0; i < 5; i++) {
+//     console.log("labas " + i);
+// }
+
+// let i = 0;
+// while (i < 3) {
+//     console.log("while " + i);
+//     i++;
+// }
+
+// while (Math.random() < 0.75) {
+//     console.log("sukames");
+// }
+
+
+// Ciklai ND 1
+
+for (let i = 0; i < 10; i++) {
+    console.log("labas");
+}
+
+
+
