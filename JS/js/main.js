@@ -333,14 +333,22 @@
 
 // String ND - 6
 
-let american = "An American in Paris"
-let tiff = "Breakfast at Tiffany's"
-let space = "2001: A Space Odyssey"
-let life = "It's a Wonderful Life"
+// let american = "An American in Paris"
+// let tiff = "Breakfast at Tiffany's"
+// let space = "2001: A Space Odyssey"
+// let life = "It's a Wonderful Life"
 
-console.log(american.replace(/[aeiou]/ig, ''));
-console.log(tiff.replace(/[aeiouy]/ig, ''));
-console.log(space.replace(/[aeiouy]/ig, ''));
-console.log(life.replace(/[aeiou]/ig, ''));
+// console.log(american.replace(/[aeiou]/ig, ''));
+// console.log(tiff.replace(/[aeiouy]/ig, ''));
+// console.log(space.replace(/[aeiouy]/ig, ''));
+// console.log(life.replace(/[aeiou]/ig, ''));
 
 // String ND - 7
+
+let nam = "Star Wars: Episode " + " ".repeat(Math.ceil(Math.random() * 10)) + (Math.ceil(Math.random() * 7) + 1) + " - A New Hope";
+// let num = nam.replace(/^\D+/g, '');
+let thenum = nam.match(/\d+/)[0];
+
+console.log(nam);
+// console.log(num);
+console.log(thenum);
