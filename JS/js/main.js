@@ -397,9 +397,13 @@
 
 // Ciklai ND 1
 
+// for (let i = 0; i < 10; i++) {
+//     console.log("labas");
+// }
+
+
+// Ciklai ND 2
+
 for (let i = 0; i < 10; i++) {
-    console.log("labas");
+    console.log(i);
 }
-
-
-
