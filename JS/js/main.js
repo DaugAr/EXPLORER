@@ -307,11 +307,21 @@
 
 // String ND - 3
 
-let firstName = "Denzel";
-let lastName = "Washington";
-let thirdName = firstName.charAt(0) + lastName.charAt(0);
+// let firstName = "Denzel";
+// let lastName = "Washington";
+// let thirdName = firstName.charAt(0) + lastName.charAt(0);
 
-console.log(thirdName);
+// console.log(thirdName);
 
 // String ND - 4
+
+let firstName = "Denzel";
+let lastName = "Washington";
+
+// console.log(lastName.substring(15, -3));
+// console.log(lastName.substring(7, 10));
+// console.log(firstName.substring(3, 6) + lastName.substring(7, 10));
+console.log(firstName.substring(firstName.length - 3) + lastName.substring(lastName.length - 3));
+
+// String ND - 5
 
