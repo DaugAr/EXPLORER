@@ -227,22 +227,32 @@
 
 // ND numeris 9
 
-// let valandos = Math.round(Math.random() * 24);
-// let minutės = Math.round(Math.random() * 60);
-// let sekundės = Math.round(Math.random() * 60);
-// let papildomosSekundės = Math.round(Math.random() * 300);
-// let secSum = sekundės + papildomosSekundės;
-// let allSec = sekundės + minutės * 60 + valandos * 3600;
-// let nowTimeH = Math.floor(allSec / 3600);
-// let nowTimeMin = Math.floor((allSec - nowTimeH * 3600) / 60);
-// // let nowTimeSec = Math.floor((allSec - nowTimeH * 3600) / 60);
+let hours = Math.round(Math.random() * 24);
+let minutes = Math.round(Math.random() * 60);
+let seconds = Math.round(Math.random() * 60);
+let extraSeconds = Math.round(Math.random() * 300);
 
-// console.log(valandos + "h", minutės + "min.", sekundės + "sec.");
-// console.log(papildomosSekundės + " extra sec.");
+// hours = 23;
+// minutes = 59;
+// seconds = 0;
+// extraSeconds = 300;
+let secSum = seconds + extraSeconds;
+let allSec = seconds + minutes * 60 + hours * 3600 + extraSeconds;
+let nowTimeH = Math.floor(allSec / 3600);
+let nowTimeMin = Math.floor((allSec - nowTimeH * 3600) / 60);
+let nowTimeSec = Math.floor(allSec - (nowTimeH * 3600) - (nowTimeMin * 60));
+
+console.log(hours + "h", minutes + "min.", seconds + "sec.");
+console.log(extraSeconds + " extra sec.");
 // console.log("sec. suma: " + secSum);
 // console.log(allSec + " all-sec.");
 // console.log(nowTimeH);
 // console.log(nowTimeH, nowTimeMin);
+if (nowTimeH < 24) {
+    console.log(nowTimeH + "h ", nowTimeMin + " min. ", nowTimeSec + "sec.");
+} else {
+    console.log(nowTimeH - 24 + "h ", nowTimeMin + " min. ", nowTimeSec + "sec.");
+}
 
 
 // neaktualu
@@ -330,6 +340,7 @@
 
 // console.log(american);
 // console.log(aBig.replaceAll("A", "*"));
+// console.log(american.replaceAll("a", "A").replaceAll("A", "*"));
 
 // String ND - 6
 
@@ -345,10 +356,10 @@
 
 // String ND - 7
 
-let nam = "Star Wars: Episode " + " ".repeat(Math.ceil(Math.random() * 10)) + (Math.ceil(Math.random() * 7) + 1) + " - A New Hope";
-// let num = nam.replace(/^\D+/g, '');
-let thenum = nam.match(/\d+/)[0];
+// let nam = "Star Wars: Episode " + " ".repeat(Math.ceil(Math.random() * 10)) + (Math.ceil(Math.random() * 7) + 1) + " - A New Hope";
+// // let num = nam.replace(/^\D+/g, '');
+// let thenum = nam.match(/\d+/)[0];
 
-console.log(nam);
-// console.log(num);
-console.log(thenum);
+// console.log(nam);
+// // console.log(num);
+// console.log(thenum);
