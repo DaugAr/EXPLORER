@@ -315,13 +315,20 @@
 
 // String ND - 4
 
-let firstName = "Denzel";
-let lastName = "Washington";
+// let firstName = "Denzel";
+// let lastName = "Washington";
 
-// console.log(lastName.substring(15, -3));
-// console.log(lastName.substring(7, 10));
-// console.log(firstName.substring(3, 6) + lastName.substring(7, 10));
-console.log(firstName.substring(firstName.length - 3) + lastName.substring(lastName.length - 3));
+// // console.log(lastName.substring(15, -3));
+// // console.log(lastName.substring(7, 10));
+// // console.log(firstName.substring(3, 6) + lastName.substring(7, 10));
+// console.log(firstName.substring(firstName.length - 3) + lastName.substring(lastName.length - 3));
 
 // String ND - 5
 
+let american = "An American in Paris"
+let aBig = american.replaceAll("a", "A");
+
+console.log(american);
+console.log(aBig.replaceAll("A", "*"));
+
+// String ND - 6
