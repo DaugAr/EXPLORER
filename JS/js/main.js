@@ -404,6 +404,17 @@
 
 // Ciklai ND 2
 
-for (let i = 0; i < 10; i++) {
-    console.log(i);
+// for (let i = 0; i < 10; i++) {
+//     console.log(i);
+// }
+
+// Ciklai ND 3
+
+for (let i = 10; i <= 50; i++) {
+    if (i % 2 == 0) {
+        console.log(i);
+    }
 }
+
+
+// Ciklai ND 4
