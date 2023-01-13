@@ -408,13 +408,20 @@
 //     console.log(i);
 // }
 
-// Ciklai ND 3
+// Ciklai ND 6
+
+// for (let i = 10; i <= 50; i++) {
+//     if (i % 2 == 0) {
+//         console.log(i);
+//     }
+// }
+
+
+// Ciklai ND 7
 
 for (let i = 10; i <= 50; i++) {
     if (i % 2 == 0) {
-        console.log(i);
+        if (i % 10 == 0) continue;
+        { console.log(i); }
     }
 }
-
-
-// Ciklai ND 4
