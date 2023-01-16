@@ -419,9 +419,52 @@
 
 // Ciklai ND 7
 
-for (let i = 10; i <= 50; i++) {
-    if (i % 2 == 0) {
-        if (i % 10 == 0) continue;
-        { console.log(i); }
+// for (let i = 10; i <= 50; i++) {
+//     if (i % 2 == 0) {
+//         if (i % 10 == 0) continue;
+//         { console.log(i); }
+//     }
+// }
+
+
+// Pamoka 2023 01 16
+
+// let i = 0
+// for (; true;) {
+//     console.log(i);
+//     i++
+//     if (i >= 10) {
+//         break;
+//     }
+// }
+
+// for (let i = 0; i < 25; i += 4) {
+//     console.log(i);
+
+// }
+
+// let sk = 0;
+// let draugai = ['Saulius', 'Arnoldas', 'Jovita', 'Matas', 'Saulius', 'Arnas', 'Darius'];
+
+// console.log(draugai);
+
+// console.log(draugai[3]);
+
+// draugai[0] = 'Saulius B';
+
+// console.log(draugai.length);
+
+// for (let i = 0; i < draugai.length; i++) {
+//     const element = draugai[i];
+//     console.log(draugai[i]);
+// }
+
+// Daugybos lentelė
+
+for (let a = 1; a <= 10; a++) {
+    let row = "";
+    for (let i = 1; i <= 10; i++) {
+        row += a * i + " ";
     }
+    console.log(row);
 }
