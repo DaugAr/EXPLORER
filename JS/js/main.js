@@ -461,10 +461,19 @@
 
 // Daugybos lentelė
 
-for (let a = 1; a <= 10; a++) {
-    let row = "";
-    for (let i = 1; i <= 10; i++) {
-        row += a * i + " ";
-    }
-    console.log(row);
-}
+// for (let a = 1; a <= 10; a++) {
+//     let row = "";
+//     for (let i = 1; i <= 10; i++) {
+//         row += a * i + " ";
+//     }
+//     console.log(row);
+// }
+
+
+// Ciklai ND - 3;
+
+let augalai = ['Bazilikas', 'Paprika', 'Agurkas', 'Pupa', 'braske', 'meta', 'salota', 'Bulve', 'Morka', 'Roze'];
+
+console.log(augalai);
+
+
