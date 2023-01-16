@@ -444,7 +444,7 @@
 // }
 
 // let sk = 0;
-// let draugai = ['Saulius', 'Arnoldas', 'Jovita', 'Matas', 'Saulius', 'Arnas', 'Darius'];
+let draugai = ['Saulius', 'Arnoldas', 'Jovita', 'Matas', 'Saulius', 'Arnas', 'Darius'];
 
 // console.log(draugai);
 
@@ -472,8 +472,18 @@
 
 // Ciklai ND - 3;
 
+// let augalai = ['Bazilikas', 'Paprika', 'Agurkas', 'Pupa', 'braske', 'meta', 'salota', 'Bulve', 'Morka', 'Roze'];
+
+// console.log(augalai);
+
+// Ciklai ND - 4
+
 let augalai = ['Bazilikas', 'Paprika', 'Agurkas', 'Pupa', 'braske', 'meta', 'salota', 'Bulve', 'Morka', 'Roze'];
 
-console.log(augalai);
+// console.log(augalai);
 
+for (let i = 0; i < augalai.length; i++) {
+    const element = augalai[i]
+    console.log(augalai[i]);
+}
 
