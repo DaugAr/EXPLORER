@@ -534,32 +534,35 @@
 
 // Ciklai Sunkesni ND - 1
 
-let count = 0;
-let number = "";
+// let count = 0;
+// let number = "";
 
-for (let i = 0; i < 300; i++) {
-    let randomNumber = Math.round(Math.random() * 300);
-    if (randomNumber > 150) {
-        count++;
-    }
+// for (let i = 0; i < 300; i++) {
+//     let randomNumber = Math.round(Math.random() * 300);
+//     if (randomNumber > 150) {
+//         count++;
+//     }
 
-    if (randomNumber > 275) {
-        console.log("[" + randomNumber + "]");
-    }
-}
-console.log(number);
-console.log(count);
+//     if (randomNumber > 275) {
+//         console.log("[" + randomNumber + "]");
+//     }
+// }
+// console.log(number);
+// console.log(count);
 
 
 
 // Ciklai Sunkesni ND - 2
 
-// for (let i = 1; i <= 3000; i++) {
-//     if (i % 77 == 0) {
-//         console.log(i + ",");
-//     }
-// }
+let skaicius = "";
 
+for (let i = 1; i <= 3000; i++) {
+    if (i % 77 == 0) {
+        skaicius += i + ", ";
+    }
+}
+console.log(skaicius.slice(0, -2));
+// console.log(skaicius);
 
 
 
