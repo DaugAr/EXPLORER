@@ -501,10 +501,38 @@
 // Ciklai ND - 8
 
 
-let p = 0;
-for (let i = 0; i <= 20; i++) {
-    if (i % 2 == 0 && i !== 0) {
-        p++;
+// let p = 0;
+// for (let i = 0; i <= 20; i++) {
+//     if (i % 2 == 0 && i !== 0) {
+//         p++;
+//     }
+// }
+// console.log(p);
+
+
+// Ciklai ND - 9
+
+let augalai = ['Bazilikas', 'Paprika', 'Agurkas', 'Pupa', 'Braske', 'Meta', 'Salota', 'Bulve', 'Morka', 'Roze'];
+let less5 = 0;
+let more7 = 0;
+
+for (let i = 0; i < augalai.length; i++) {
+    if (augalai[i].length < 5) {
+        less5++;
     }
 }
-console.log(p);
+console.log(less5 + " - maziau nei 5 raides");
+
+for (let i = 0; i < augalai.length; i++) {
+    if (augalai[i].length > 7) {
+        more7++;
+    }
+}
+console.log(more7 + " - daugiau nei 7 raides");
+
+
+// Ciklai Sunkesni ND - 2
+
+
+
+
