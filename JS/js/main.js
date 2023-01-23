@@ -654,18 +654,51 @@
 
 // Ciklai Sunkesni ND - 6
 
-let Kazys = 0;
-let Petras = 0;
+// let Kazys = 0;
+// let Petras = 0;
 
-while (Kazys < 222 && Petras < 222) {
-    Kazys += Math.floor(Math.random() * 21) + 5;
-    Petras += Math.floor(Math.random() * 11) + 10;
+// while (Kazys < 222 && Petras < 222) {
+//     Kazys += Math.floor(Math.random() * 21) + 5;
+//     Petras += Math.floor(Math.random() * 11) + 10;
+// }
+
+// let laimetojas = Kazys > Petras ? "Kazys" : "Petras";
+// console.log("Kazys: " + Kazys);
+// console.log("Petras: " + Petras);
+// console.log("Laimetojas: " + laimetojas);
+
+// Ciklai Sunkesni ND - 8
+
+// a
+
+// let maziSmugiai = 0;
+// for (let i = 0; i < 5; i++) {
+//     let gylis = 0;
+//     while (gylis < 85) {
+//         let smugis = Math.floor(Math.random() * 16) + 5;
+//         gylis += smugis;
+//         maziSmugiai++;
+//     }
+// }
+// console.log("Kalimu kiekis: " + maziSmugiai);
+
+// b
+
+let dideliSmugiai = 0;
+for (let i = 0; i < 5; i++) {
+    let gylis = 0;
+    while (gylis < 85) {
+        let smugis = Math.random() < 0.5;
+        if (smugis) {
+            let smugioGylis = Math.floor(Math.random() * 11) + 20;
+            gylis += smugioGylis;
+            dideliSmugiai++;
+        } else {
+            dideliSmugiai++
+        }
+    }
 }
-
-let laimetojas = Kazys > Petras ? "Kazys" : "Petras";
-console.log("Kazys: " + Kazys);
-console.log("Petras: " + Petras);
-console.log("Laimetojas: " + laimetojas);
+console.log("Kalimu kiekis: " + dideliSmugiai);
 
 
 
