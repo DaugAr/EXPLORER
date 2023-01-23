@@ -651,3 +651,21 @@
 //     }
 // }
 
+
+// Ciklai Sunkesni ND - 6
+
+let Kazys = 0;
+let Petras = 0;
+
+while (Kazys < 222 && Petras < 222) {
+    Kazys += Math.floor(Math.random() * 21) + 5;
+    Petras += Math.floor(Math.random() * 11) + 10;
+}
+
+let laimetojas = Kazys > Petras ? "Kazys" : "Petras";
+console.log("Kazys: " + Kazys);
+console.log("Petras: " + Petras);
+console.log("Laimetojas: " + laimetojas);
+
+
+
