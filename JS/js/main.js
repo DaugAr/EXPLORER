@@ -596,16 +596,58 @@
 
 // Ciklai Sunkesni ND - 4
 
-let row = "";
-for (let i = 0; i < 11; i++) {
-    for (let a = 0; a < 11; a++) {
-        if (i == a || i == 10 - a) {
-            row += "x";
-        } else {
-            row += "*";
-        }
-    }
-    row += "\n";
-}
-console.log(row);
+// let row = "";
+// for (let i = 0; i < 11; i++) {
+//     for (let a = 0; a < 11; a++) {
+//         if (i == a || i == 10 - a) {
+//             row += "x";
+//         } else {
+//             row += "*";
+//         }
+//     }
+//     row += "\n";
+// }
+// console.log(row);
+
+
+// Ciklai Sunkesni ND - 5
+
+// a
+
+// while (true) {
+//     let metimas = Math.floor(Math.random() * 2);
+//     if (metimas === 0) {
+//         console.log("H");
+//         break;
+//     } else {
+//         console.log("S");
+//     }
+// }
+
+// b
+
+// let herbas = 0;
+// while (herbas < 3) {
+//     let metimas = Math.floor(Math.random() * 2);
+//     if (metimas === 0) {
+//         console.log("H");
+//         herbas++;
+//     } else {
+//         console.log("S");
+//     }
+// }
+
+// c
+
+// let herbas = 0;
+// while (herbas < 3) {
+//     let metimas = Math.floor(Math.random() * 2);
+//     if (metimas === 0) {
+//         console.log("H");
+//         herbas++;
+//     } else {
+//         console.log("S");
+//         herbas = 0;
+//     }
+// }
 
