@@ -585,25 +585,27 @@
 
 // Ciklai Sunkesni ND - 3
 
-for (let i = 0; i < 11; i++) {
-    let row = "";
-    for (let a = 0; a < 11; a++) {
-        row += "*";
-    }
-    console.log(row);
-}
+// for (let i = 0; i < 11; i++) {
+//     let row = "";
+//     for (let a = 0; a < 11; a++) {
+//         row += "*";
+//     }
+//     console.log(row);
+// }
 
 
 // Ciklai Sunkesni ND - 4
 
-// for (let i = 0; i < 10; i++) {
-//     let row = "";
-//     for (let a = 0; a < 10; a++) {
-//         if (i == a || a == 9 - a) {
-//             row += "x";
-//         } else {
-//             row += "*";
-//         }
-//     }
-//     console.log(row);
-// }
+let row = "";
+for (let i = 0; i < 11; i++) {
+    for (let a = 0; a < 11; a++) {
+        if (i == a || i == 10 - a) {
+            row += "x";
+        } else {
+            row += "*";
+        }
+    }
+    row += "\n";
+}
+console.log(row);
+
