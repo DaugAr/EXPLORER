@@ -534,24 +534,24 @@
 
 // Ciklai Sunkesni ND - 1
 
-let count = 0;
-let number = "";
+// let number = "";
+// let count = 0;
 
-for (let i = 0; i < 300; i++) {
-    let randomNumber = Math.round(Math.random() * 300);
+// for (let i = 0; i < 300; i++) {
+//     let randomNumber = Math.round(Math.random() * 300);
 
-    if (randomNumber <= 275) {
-        number += randomNumber + " ";
-    } else {
-        number += "[" + randomNumber + "]";
-    }
+//     if (randomNumber <= 275) {
+//         number += randomNumber + " ";
+//     } else {
+//         number += "[" + randomNumber + "]";
+//     }
 
-    if (randomNumber > 150) {
-        count++;
-    }
-}
-console.log(count);
-console.log(number);
+//     if (randomNumber > 150) {
+//         count++;
+//     }
+// }
+// console.log(count);
+// console.log(number);
 
 
 
@@ -581,3 +581,15 @@ console.log(number);
 // let citrusinius = vaisius.slice(vaisius.length - 2, vaisius.length - 1);
 // console.log(citrusinius);
 // // console.log(vaisius);
+
+
+// Ciklai Sunkesni ND - 3
+
+for (let i = 0; i <= 7; i++) {
+    let row = "*";
+    for (let a = 0; a <= 7; a++) {
+        row += "*";
+    }
+    console.log(row);
+}
+
