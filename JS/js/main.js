@@ -684,21 +684,60 @@
 
 // b
 
-let dideliSmugiai = 0;
-for (let i = 0; i < 5; i++) {
-    let gylis = 0;
-    while (gylis < 85) {
-        let smugis = Math.random() < 0.5;
-        if (smugis) {
-            let smugioGylis = Math.floor(Math.random() * 11) + 20;
-            gylis += smugioGylis;
-            dideliSmugiai++;
-        } else {
-            dideliSmugiai++
-        }
-    }
-}
-console.log("Kalimu kiekis: " + dideliSmugiai);
+// let dideliSmugiai = 0;
+// for (let i = 0; i < 5; i++) {
+//     let gylis = 0;
+//     while (gylis < 85) {
+//         let smugis = Math.random() < 0.5;
+//         if (smugis) {
+//             let smugioGylis = Math.floor(Math.random() * 11) + 20;
+//             gylis += smugioGylis;
+//             dideliSmugiai++;
+//         } else {
+//             dideliSmugiai++
+//         }
+//     }
+// }
+// console.log("Kalimu kiekis: " + dideliSmugiai);
 
+
+// Ciklai Sunkesni ND - 7
+
+
+// Reikia nupaišyti pilnavidurį rombą, taip pat, kaip ir pilnavidurį kvadratą (https://lt.wikipedia.org/wiki/Rombas), kurio aukštis 21 eilutė.
+
+// let height = 21;
+
+// for (let i = 0; i < height; i++) {
+//     let n = "";
+//     for (let a = 0; a < height; a++) {
+//         n += "*";
+//     }
+//     console.log(n);
+// }
+
+
+// let row = "";
+// for (let i = 0; i < 5; i++) {
+//     for (let a = 0; a < 5; a++) {
+//         if (i == a || i == 4 - a) {
+//             row += "x";
+//         } else {
+//             row += "*";
+//         }
+//     }
+//     row += "\n";
+// }
+// console.log(row);
+
+
+// Ciklai Sunkesni ND - 9
+
+// let numbers = new Set();
+// while (numbers.size < 50) {
+//     numbers.add(Math.floor(Math.random() * 200) + 1);
+// }
+// let string = [...numbers].join(", ");
+// console.log(string);
 
 
