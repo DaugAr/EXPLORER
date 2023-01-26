@@ -130,10 +130,29 @@
 // Lengvesni ND 9
 
 
-function skaiciai() {
-    for (let i = 1; i <= 10; i++) {
-        document.getElementById("sequence").innerHTML += "<p>" + i + "</p>";
+// function skaiciai() {
+//     for (let i = 1; i <= 10; i++) {
+//         document.getElementById("sequence").innerHTML += "<p>" + i + "</p>";
+//     }
+// }
+
+// skaiciai();
+
+// Vidutiniai ND 1
+
+
+// Sukurkite funkciją kuri pakeltų paduotą skaičių n laipsniu, ir gražintų reikšmę (paduodate du parametrus, skaičių ir laipsnį) NENAUDOTI jau esamų js funkcijų! Nenaudoti ** operatoriaus! Naudoti for, if, kintamuosius.
+
+function skaiciusLaipsniu(a, n) {
+    let x = a;
+    for (let i = 1; i < n; i++) {
+        x *= a;
+    }
+    if (n === 0) {
+        return console.log(1);
+    } else {
+        return console.log(x);
     }
 }
 
-skaiciai();
+skaiciusLaipsniu(2, 3);
